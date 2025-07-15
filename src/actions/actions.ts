@@ -48,14 +48,14 @@ export async function createPost(prevState: State | undefined, formData: FormDat
         updatedAt: new Date(),
         author: {
           connect: {
-            email: "alice@prisma.io"
+            email: "john@gmail.com"
           }
         }
       }
     })
   } catch (error) {
     return {
-      message: "Database error. Failed to create post."
+      message: `Database error. Failed to create post. ${error instanceof Error ? error.message : "Unknown error"}`
     }
   }
 
