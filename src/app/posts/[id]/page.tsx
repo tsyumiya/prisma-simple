@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/db"
-import EditPost from "@/app/components/update/page"
+import EditPost from "@/app/components/edit/editForm"
 import { notFound } from "next/navigation"
 import { cache } from "react"
 

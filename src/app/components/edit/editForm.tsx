@@ -1,5 +1,6 @@
 "use client"
 
+import { Prisma } from "@/generated/prisma/client"
 import { editPost, State } from "@/actions/actions"
 import { Post } from "@/lib/definitions"
 import { useActionState } from "react"
